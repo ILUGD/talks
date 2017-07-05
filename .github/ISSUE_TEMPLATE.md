@@ -19,4 +19,4 @@
     read up on the same.
 
 **Slides**
-    Links to the slides if present.
+    Links to the slides.

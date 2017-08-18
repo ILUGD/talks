@@ -20,3 +20,8 @@
 
 **Slides**
     Links to the slides.
+    
+---
+### Note
+Please do add/upload slides in pdf or an open document format.
+People who are using LibreOffice, openOffice etc. should not have any problems viewing it.

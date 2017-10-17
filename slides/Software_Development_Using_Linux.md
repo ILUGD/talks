@@ -25,15 +25,3 @@
 3. Understand how things work. That's a programmer's job to know.  
 
 ### Thank you.
-
-
-
-
-
-
-
-
-
-
-
-

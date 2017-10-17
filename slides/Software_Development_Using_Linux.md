@@ -1,6 +1,8 @@
 ### Notes on the talk	"Software development on Linux" 
  **Taken by Anuvrat Parashar** 
 
+###Why on Linux ?
+ 
 1. Setting up development environment
 2. Job 
 3. Thinking

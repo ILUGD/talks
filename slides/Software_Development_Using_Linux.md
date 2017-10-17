@@ -1,4 +1,5 @@
-###	Software development on Linux 
+### Notes on the talk	"Software development on Linux" 
+ **Taken by Anuvrat Parashar** 
 
 1. Setting up development environment
 2. Job 

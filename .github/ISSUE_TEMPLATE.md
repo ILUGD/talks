@@ -20,7 +20,10 @@
 
 **Slides**
     Links to the slides.
-    
+
+**Preferred Time and mode**
+    Time(day/evening) online/offline.
+
 ---
 ### Note
 Please do add/upload slides in pdf or an open document format.

@@ -24,6 +24,9 @@
 **Preferred Time and mode**
     Time(day/evening) online/offline.
 
+**Previous Experience**
+    If you have given talks before please link that here. If you haven't then don't worry, we would definitely help you.
+
 ---
 ### Note
 Please do add/upload slides in pdf or an open document format.

@@ -27,6 +27,9 @@
 **Previous Experience**
     If you have given talks before please link that here. If you haven't then don't worry, we would definitely help you.
 
+**Contact info**
+    Add your Telegram/Twitter/LinkedIn handle(s) here, so that meetup organizers can contact you for confirming timings etc.
+
 **Checklist**
 
  Place an '[x]' (no spaces) in all the fields you agree to. You can keep the fields blank on which you don't agree

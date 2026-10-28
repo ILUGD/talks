@@ -1,0 +1,247 @@
+name: 🎙️ Talk proposal
+description: Create a proposal for your talk at the ILUGD monthly meetups here.
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to share your learnings with the ILUGD community! 👋
+
+        Please note that all talks are licensed under a [Creative Commons Attribution-Non Commercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), unless you state otherwise and request the use of a different license of your choosing, either in your proposal below or in the materials you intend to share.
+
+  - type: input
+    id: title
+    attributes:
+      label: Talk title
+      description: Please share a clear, engaging title for your talk
+      placeholder: "e.g.; an overview of Kubernetes internals"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short talk description
+      description: Brief abstract about your talk (50-150 words). This will be used for our social media.
+      placeholder: |
+        Describe what your talk covers, who would benefit from it, and what key takeaways
+        attendees can expect. This description will be used for promoting your event on social media.
+    validations:
+      required: true
+
+  - type: textarea
+    id: long-description
+    attributes:
+      label: Long talk description
+      description: A longer version of a description about your talk (150-500 words).
+      placeholder: |
+        Add a longer description of your talk: similar to the previous one, but with more details.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: What format do you have in mind?
+      description: Choose the format that best fits your content
+      options:
+        - Talk (20-25 minutes + Q&A)
+        - Workshop (45-60 minutes, hands-on)
+        - Lightning talk (5 minutes)
+        - Sponsored talk (20-25 minutes, sponsored by a company or organization as part of a potential partnership or sponsorship arrangement via venue sharing, food and beverages, or other amenities for the event)
+        - BoF (Birds of a Feather) session (30-45 minutes, open discussion or topic exploration with the audience)
+        - Panel discussion (45-60 minutes with multiple speakers discussing a specific topic, followed by audience Q&A – please specify the panelists as well)
+        - Other (please share more details in your proposal)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience-level
+    attributes:
+      label: What level of audience do you have in mind when you think about your proposal?
+      description: Choose the format that best fits your content
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Talk outline / Agenda
+      description: "Please provide a brief outline of your talk's structure"
+      placeholder: |
+        Example:
+        • Introduction to the problem (5 mins)
+        • Core concepts and theory (10 mins)
+        • Live demo/code walkthrough (15 mins)
+        • Best practices and pitfalls (10 mins)
+        • Q&A (10 mins)
+
+        You may update this outline later as you prepare your talk.
+    validations:
+      required: true
+
+  - type: textarea
+    id: takeaways
+    attributes:
+      label: Key takeaways
+      description: What will attendees learn or gain from your talk?
+      placeholder: |
+        Please 3-5 key takeaways that attendees can expect from your talk. Here are some rubrics:
+        • Understanding of [concept/technology/approach]
+        • Practical knowledge of [specific skill/technique]
+        • Best practices for [relevant area]
+        • Common pitfalls to avoid when [doing something]
+        • Resources and next steps for further learning
+    validations:
+      required: true
+
+  - type: input
+    id: duration
+    attributes:
+      label: "Duration (including Q&A)"
+      description: "Please specify the total time needed for your talk, including a Q&A session"
+      placeholder: "For example: 30 minutes (20 minutes for the talk + 10 minutes for a Q&A session)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites and preparation
+      description: What should attendees know or prepare beforehand?
+      placeholder: |
+        For example:
+        • Familiarity with command line basics
+        • No prior experience with [specific technology] needed
+
+        We usually have a diverse audience, so please keep in mind that not everyone may be familiar with advanced topics.
+        If your talk requires specific tools or libraries, please mention them here.
+        If you plan to do a live demo, please ensure you have tested it on the event setup beforehand.
+        If you feel you will need help with this, please let us know.
+    validations:
+      required: false
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources and references
+      description: Any helpful resources for reviewers and attendees
+      placeholder: |
+        • Links to relevant documentation
+        • Git repositories
+        • Articles or papers
+        • Tools or libraries used
+    validations:
+      required: false
+
+  - type: input
+    id: slides
+    attributes:
+      label: Link to slides/demos (if available)
+      description: Please share a link to your slides, draft slides, previous recordings of this talk (if any), or a short demo video of yourself giving this talk. This is optional, but highly recommended if you are a first-time speaker. We understand you may not have these ready at the time of proposal submission, and you are welcome to propose a talk even if you don't have these ready yet. We can work with you to prepare them, so please share whatever you have, even if it's a rough draft or an outline. We deem slides and presentation materials as prerequisites for final acceptance and scheduling.
+      placeholder: "https://slides.com/... or https://github.com/..."
+    validations:
+      required: false
+
+  - type: upload
+    id: slides-file
+    attributes:
+      label: Your slides in a [preferably] open format (if available)
+      description: "Drag and drop or select files to upload (e.g., .pdf, .odt, .md, .txt)"
+
+  - type: input
+    id: speaker-socials
+    attributes:
+      label: "Social media handles (optional)"
+      description: "Your social media handles for promotion and networking"
+      placeholder: "Mastodon: @yourusername.mas.to; Linkedin: https://linkedin.com/in/yourusername"
+    validations:
+      required: false
+
+  - type: input
+    id: speaker-pic
+    attributes:
+      label: "Profile picture URL (optional)"
+      description: "We'll use this for event posters and social media. You can use a professional photo, avatar, or any image you're comfortable with being public."
+      placeholder: "https://example.com/your-photo.jpg, GitHub profile picture, Gravatar, and so on"
+    validations:
+      required: false
+
+  - type: textarea
+    id: about-author
+    attributes:
+      label: Speaker bio
+      description: Tell us about yourself! This will be used for speaker introductions and promotional materials.
+      placeholder: |
+        Include:
+        • Your background and current role
+        • Relevant experience with the talk topic
+        • Previous speaking experience (if any)
+        • Fun fact or personal interest
+        • How to reach you (email, social media)
+
+        Don't worry if you're a first-time speaker – we welcome everyone!
+    validations:
+      required: true
+
+  - type: input
+    id: availability
+    attributes:
+      label: Availability
+      description: When would you be available to give this talk?
+      placeholder: "Month/Year or specific dates (DD/MM/YYYY)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility & special requirements
+      description: Are there any accessibility needs or special technical requirements for your talk?
+      placeholder: |
+        For example:
+        • Screen reader compatibility is needed
+        • Large font requirements
+        • Special AV equipment
+        • Dietary restrictions for the event day
+        • Any other accommodations
+
+        While we do ask this beforehand, please do understand that we might not be able to accomodate every request due to limited volunteer resources.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: speaker-agreements
+    attributes:
+      label: Speaker checklist
+      description: "Please confirm the following agreements before submitting your proposal:"
+      options:
+        - label: "I will make my talk accessible to all attendees and will proactively ask for any accommodations or special requirements I might need"
+          required: true
+        - label: "I agree to share slides, code snippets, and other materials used during the talk with the community"
+          required: true
+        - label: "I will follow ILUGD's Code of Conduct and maintain a welcoming, inclusive environment throughout my participation: https://linuxdelhi.org/coc.html"
+          required: true
+        - label: "I understand that ILUGD meetups are community-centric events focused on learning, knowledge sharing, and networking, and I will respect this ethos by not using this platform for self-promotion or hiring pitches during my presentation, unless explicitly invited to do so by means of a sponsorship or similar arrangement"
+          required: true
+        - label: "If the talk is recorded by the ILUGD team, I grant permission to release the video on ILUGD's YouTube channel under the CC-BY-4.0 license, or a different license of my choosing if I am specifying it in my proposal or with the materials I share"
+          required: false
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Additional comments
+      description: Anything else you'd like us to know?
+      placeholder: |
+        • Are you a first-time speaker? We're here to help!
+        • Do you need mentorship or feedback on your talk?
+        • Special circumstances or considerations besides the ones stated above?
+        • Do you have any other questions about the process that do not fit the requests stated above?
+        • Did you find an issue with this questionnaire or have suggestions to improve it? Please let us know here or [open a separate issue](https://github.com/ilugd/talks/issues/new?template=BLANK_ISSUE), and we will be happy to hear from you!
+    validations:
+      required: false
+

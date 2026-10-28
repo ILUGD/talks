@@ -1,0 +1,99 @@
+name: 🎪 Community/Project stall proposal
+description: Create a proposal to request a stall at the ILUGD monthly meetups here.
+labels: ["proposal"]
+assignees: ["ChiragSukhala"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to apply for a community/project stall at an ILUGD meetup! 👋
+
+        Please note that we are trying this out only for https://github.com/orgs/ILUGD/projects/5 for now, and submitting this proposal does not guarantee a spot at the meetup. For brevity, communiy/project will be referred to as just "project" below.
+
+  - type: input
+    id: title
+    attributes:
+      label: Name of project
+      description: Name of your project
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: About the project
+      description: What is your project about, and how does it fit in an ILUGD meetup? (Feel free to share links!)
+    validations:
+      required: true
+
+  - type: input
+    id: community-socials
+    attributes:
+      label: "Social media handles (optional)"
+      description: "Your project's social media handles for promotion and networking"
+      placeholder: "Mastodon: @community.mas.to; Linkedin: https://linkedin.com/in/community"
+    validations:
+      required: false
+
+  - type: textarea
+    id: community-logo
+    attributes:
+      label: "Project Logo (optional)"
+      description: "We'll use this for event posters and social media. You can use a professional photo, avatar, or any image you're comfortable with being public. Either share a link, or upload the logo here."
+      placeholder: "https://example.com/project-photo.jpg, GitHub profile picture, Gravatar, and so on"
+    validations:
+      required: false
+
+  - type: textarea
+    id: about-author
+    attributes:
+      label: Author bio
+      description: Tell us about yourself! How are you involved in the project, and how do you plan to run the stall?
+      placeholder: |
+        Include:
+        • Your background and current role
+        • Previous stall experience (if any)
+        • Fun fact or personal interest
+        • How to reach you (email, social media)
+
+        Don't worry if you're a first-time stall organizer – we welcome everyone!
+    validations:
+      required: true
+
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility & special requirements
+      description: Are there any accessibility needs or special technical requirements for your project?
+      placeholder: |
+        For example:
+        • Screen reader compatibility is needed
+        • Large font requirements
+        • Special AV equipment
+        • Dietary restrictions for the event day
+        • Any other accommodations
+
+        While we do ask this beforehand, please do understand that we might not be able to accomodate every request due to limited volunteer resources.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: representative-agreements
+    attributes:
+      label: Project checklist
+      description: "Please confirm the following agreements before submitting the proposal - As a representative of the project, :"
+      options:
+        - label: "I will follow ILUGD's Code of Conduct and maintain a welcoming, inclusive environment throughout my participation: https://linuxdelhi.org/coc.html"
+          required: true
+        - label: "I understand that ILUGD meetups are community-centric events focused on learning, knowledge sharing, and networking, and I will respect this ethos by not using this platform for self-promotion or hiring pitches during my time at the stall, unless explicitly invited to do so by means of a sponsorship or similar arrangement"
+          required: true
+        - label: "If there are any such items that I plan to sell at my stall, I would inform the organizers in this form under the 'Additional comments' textfield."
+          required: true
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Additional comments
+      description: Anything else you'd like us to know?
+    validations:
+      required: false
